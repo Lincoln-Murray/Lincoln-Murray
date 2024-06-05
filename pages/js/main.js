@@ -1,3 +1,8 @@
 addEventListener('scroll', (evt) => {
-    console.log(document.getElementsByName('html').scrolltop)
-});
+    if (document.documentElement.scrollTop > 70) {
+        document.getElementById('header').style.backgroundColor = '#214066'
+    }
+    else {
+        document.getElementById('header').style.backgroundColor = 'transparent'
+    }
+    });
