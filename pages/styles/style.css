@@ -3,7 +3,7 @@
 }
 
 html {
-    background-color: black;
+    background-color: #0d1f35;
 }
 
 .header {
@@ -14,10 +14,6 @@ html {
     height: 8%;
     transition: 0.4s background-color cubic-bezier(0.075, 0.82, 0.165, 1);
     background-color: transparent;
-}
-
-.header:is-scrolled {
-    background-color: rgb(255, 255, 255);
 }
 
 .centre {
