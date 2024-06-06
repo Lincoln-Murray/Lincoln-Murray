@@ -1,5 +1,25 @@
 :root{
-    --title_size: 1.5em;
+    --title_size: 2em;
+}
+
+@font-face {
+    font-family: 'ABeeZee-italic';
+    src: 
+        url('fonts/ABeeZee/abeezee-italic-webfont.woff2') format('woff2'),
+        url('fonts/ABeeZee/abeezee-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ABeeZee-regular';
+    src:
+        url('../fonts/ABeeZee/abeezee-regular-webfont.woff2') format('woff2'),
+        url('../fonts/ABeeZee/abeezee-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 html {
@@ -7,7 +27,7 @@ html {
 }
 
 .header {
-    font-size: var(--title_size);
+    font-family: 'ABeeZee-regular';
     top: 0%;
     left: 0%;
     position: fixed;
@@ -18,7 +38,7 @@ html {
 }
 
 .centre {
-    text-align: center;
+    font-family: 'ABeeZee-regular';
     position: absolute;
     top: 50%;
     left: 50%;
