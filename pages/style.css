@@ -1,0 +1,28 @@
+:root{
+    --title_size: 1.5em;
+}
+
+html {
+    background-color: #0d1f35;
+}
+
+.header {
+    font-size: var(--title_size);
+    top: 0%;
+    left: 0%;
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    transition: 0.4s background-color cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: transparent;
+}
+
+.centre {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: var(--title_size);
+}
