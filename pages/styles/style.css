@@ -1,5 +1,6 @@
 :root{
     --title_size: 2em;
+    --title_color: #171925;
 }
 
 @font-face {
@@ -22,6 +23,10 @@
 
 }
 
+* {
+    margin: 0px;
+}
+
 html {
     background-color: #0d1f35;
 }
@@ -33,7 +38,7 @@ html {
     position: fixed;
     width: 100%;
     height: 8%;
-    transition: 0.4s background-color cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.7s background-color cubic-bezier(0.075, 0.82, 0.165, 1);
     background-color: transparent;
 }
 
