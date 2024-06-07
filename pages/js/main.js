@@ -1,5 +1,5 @@
 addEventListener('scroll', (evt) => {
-    if (document.documentElement.scrollTop > document.getElementById('header').style.height) {
+    if (document.documentElement.scrollTop > 70) {
         document.getElementById('header').style.backgroundColor = '#214066'
     }
     else {
