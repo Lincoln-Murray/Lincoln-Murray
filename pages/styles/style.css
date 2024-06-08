@@ -42,6 +42,15 @@ html {
     background-color: transparent;
 }
 
+.footer {
+    font-family: 'ABeeZee-regular';
+    left: 0%;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: black;
+}
+
 .centre {
     font-family: 'ABeeZee-regular';
     position: absolute;
@@ -50,4 +59,5 @@ html {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: var(--title_size);
+    text-align: center;
 }
