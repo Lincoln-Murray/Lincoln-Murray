@@ -1,6 +1,6 @@
 addEventListener('scroll', (evt) => {
     if (document.documentElement.scrollTop > window.innerHeight*0.08) {
-        document.getElementById('header').style.backgroundColor = '#214066'
+        document.getElementById('header').style.backgroundColor = 'var(--highlight_color)'
     }
     else {
         document.getElementById('header').style.backgroundColor = 'transparent'

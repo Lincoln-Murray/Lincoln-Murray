@@ -1,6 +1,10 @@
 :root{
     --title_size: 2em;
-    --title_color: #171925;
+    --background_color: #171925;
+    --primary_color: #0d1f35;
+    --secondary_color: #636b6c;
+    --auxilary_color: #3b3237;
+    --highlight_color: #83555e;
 }
 
 @font-face {
@@ -28,7 +32,7 @@
 }
 
 html {
-    background-color: #0d1f35;
+    background-color: var(--background_color);
 }
 
 .header {
@@ -48,7 +52,7 @@ html {
     position: absolute;
     width: 100%;
     height: 30%;
-    background-color: black;
+    background-color: var(--auxilary_color);
 }
 
 .centre {
