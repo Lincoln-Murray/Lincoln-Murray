@@ -55,6 +55,19 @@ html {
     background-color: var(--auxilary_color);
 }
 
+.footer_centre {
+    position: absolute;
+    background-color: var(--secondary_color);
+    color: var(--auxilary_color);
+    font-family: 'ABeeZee-regular';
+    font-size: var(--title_size);
+    text-align: center;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, 5%);
+    width: 30%;
+    height: 25%;
+}
+
 .centre {
     font-family: 'ABeeZee-regular';
     position: absolute;
