@@ -1,5 +1,6 @@
 :root{
     --title_size: 2em;
+    --menu_width: 40%;
     --background_color: #171925;
     --primary_color: #0d1f35;
     --secondary_color: #636b6c;
@@ -55,10 +56,10 @@ p {
 .menu {
     position: fixed;
     background-color: var(--auxilary_color);
-    width: 40%;
+    width: var(--menu_width);
     height: 100%;
     z-index: 2;
-    left: -40%;
+    left: calc(-1*var(--menu_width));
     transition: 0.9s left;
     -webkit-transition: 0.9s left;
 }

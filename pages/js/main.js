@@ -33,7 +33,7 @@ function menu() {
         menu_open = true
     }
     else {
-        document.getElementById('menu').style.left = '-40%'
+        document.getElementById('menu').style.left = 'calc(-1*var(--menu_width))'
         menu_open = false
     }
 }
