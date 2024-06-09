@@ -52,6 +52,17 @@ p {
     background-color: transparent;
 }
 
+.menu {
+    position: fixed;
+    background-color: var(--auxilary_color);
+    width: 40%;
+    height: 100%;
+    z-index: 2;
+    left: -40%;
+    transition: 0.9s left;
+    -webkit-transition: 0.9s left;
+}
+
 .centre {
     font-family: 'ABeeZee-regular';
     position: absolute;

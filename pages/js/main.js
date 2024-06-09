@@ -1,3 +1,5 @@
+menu_open = false
+
 addEventListener('scroll', (evt) => {
     if (document.documentElement.scrollTop > window.innerHeight*0.05) {
         document.getElementById('header').style.backgroundColor = 'var(--highlight_color)'
@@ -7,7 +9,17 @@ addEventListener('scroll', (evt) => {
     }
     });
 
+addEventListener('click', (evt) => {
+    let El = evt.target
+    console.log(El)
+    if (El === menu_button || (El != menu_element && menu_open === true)) {
+        menu()
+    }
+});
+
 addEventListener('DOMContentLoaded', (evt) => {
+    menu_element = document.getElementById('menu')
+    menu_button = document.getElementById('menu_button')
     resize()
 });
 
@@ -16,7 +28,14 @@ addEventListener('resize', (evt) => {
 });
 
 function menu() {
-    console.log('menu')
+    if (!menu_open) {
+        document.getElementById('menu').style.left = '0'
+        menu_open = true
+    }
+    else {
+        document.getElementById('menu').style.left = '-40%'
+        menu_open = false
+    }
 }
 
 function resize() {
