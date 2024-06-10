@@ -1,7 +1,8 @@
 menu_open = false
 
 addEventListener('scroll', (evt) => {
-    if (document.documentElement.scrollTop > window.innerHeight*0.05) {
+    distance_top = document.documentElement.scrollTop
+    if (distance_top > window.innerHeight*0.05) {
         document.getElementById('header').style.backgroundColor = 'var(--highlight_color)'
     }
     else {
