@@ -11,8 +11,8 @@
 @font-face {
     font-family: 'ABeeZee-italic';
     src: 
-        url('fonts/ABeeZee/abeezee-italic-webfont.woff2') format('woff2'),
-        url('fonts/ABeeZee/abeezee-italic-webfont.woff') format('woff');
+        url('../fonts/ABeeZee/abeezee-italic-webfont.woff2') format('woff2'),
+        url('../fonts/ABeeZee/abeezee-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
