@@ -8,6 +8,12 @@ addEventListener('scroll', (evt) => {
     else {
         document.getElementById('header').style.backgroundColor = 'transparent'
     }
+    if (distance_top > 0.9* 1500){
+        document.getElementById('top scroll').style.visibility = 'visible'
+    }
+    else {
+        document.getElementById('top scroll').style.visibility = 'hidden'
+    }
     });
 
 addEventListener('click', (evt) => {
