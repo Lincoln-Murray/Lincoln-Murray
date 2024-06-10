@@ -35,6 +35,7 @@
 
 html {
     background-color: var(--background_color);
+    scroll-behavior: smooth;
 }
 
 p {
