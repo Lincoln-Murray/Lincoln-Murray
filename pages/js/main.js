@@ -9,18 +9,18 @@ addEventListener('scroll', (evt) => {
         document.getElementById('header').style.backgroundColor = 'transparent'
     }
     if (distance_top > 1400){
-        document.getElementById('scroll top').style.visibility = 'visible'
-        document.getElementById('scroll top').style.backgroundColor = 'var(--highlight_color)'
-        document.getElementById('scroll top').style.width = '10%'
-        document.getElementById('scroll top').style.height = '5%'
-        document.getElementById('scroll top link').style.Color = 'var(--background_color)'
+        scroll_top_element.style.visibility = 'visible'
+        scroll_top_element.style.backgroundColor = 'var(--highlight_color)'
+        scroll_top_element.style.width = '10%'
+        scroll_top_element.style.height = '5%'
+        scroll_top_link_element.style.Color = 'var(--background_color)'
     }
     else {
-        document.getElementById('scroll top').style.visibility = 'hidden'
-        document.getElementById('scroll top').style.backgroundColor = 'transparent'
-        document.getElementById('scroll top').style.width = '0%'
-        document.getElementById('scroll top').style.height = '0%'
-        document.getElementById('scroll top link').style.Color = 'transparent'
+        scroll_top_element.style.visibility = 'hidden'
+        scroll_top_element.style.backgroundColor = 'transparent'
+        scroll_top_element.style.width = '0%'
+        scroll_top_element.style.height = '0%'
+        scroll_top_link_element.style.Color = 'transparent'
     }
     });
 
@@ -35,6 +35,8 @@ addEventListener('click', (evt) => {
 addEventListener('DOMContentLoaded', (evt) => {
     menu_element = document.getElementById('menu')
     menu_button = document.getElementById('menu_button')
+    scroll_top_element =  document.getElementById('scroll top')
+    scroll_top_link_element = document.getElementById('scroll top link')
     resize()
 });
 
