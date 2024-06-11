@@ -5,6 +5,9 @@ addEventListener('scroll', (evt) => {
     if (distance_top > window.innerHeight*0.05) {
         document.getElementById('header').style.backgroundColor = 'var(--highlight_color)'
     }
+    else {
+        document.getElementById('header').style.backgroundColor = 'transparent'
+    }
     if (distance_top > 1400){
         document.getElementById('scroll top').style.visibility = 'visible'
         document.getElementById('scroll top').style.backgroundColor = 'var(--highlight_color)'
@@ -19,7 +22,7 @@ addEventListener('scroll', (evt) => {
         document.getElementById('scroll top').style.height = '0%'
         document.getElementById('scroll top link').style.Color = 'transparent'
     }
- });
+    });
 
 addEventListener('click', (evt) => {
     let El = evt.target
