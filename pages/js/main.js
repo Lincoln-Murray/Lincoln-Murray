@@ -5,16 +5,21 @@ addEventListener('scroll', (evt) => {
     if (distance_top > window.innerHeight*0.05) {
         document.getElementById('header').style.backgroundColor = 'var(--highlight_color)'
     }
+    if (distance_top > 1400){
+        document.getElementById('scroll top').style.visibility = 'visible'
+        document.getElementById('scroll top').style.backgroundColor = 'var(--highlight_color)'
+        document.getElementById('scroll top').style.width = '10%'
+        document.getElementById('scroll top').style.height = '5%'
+        document.getElementById('scroll top link').style.Color = 'var(--background_color)'
+    }
     else {
-        document.getElementById('header').style.backgroundColor = 'transparent'
+        document.getElementById('scroll top').style.visibility = 'hidden'
+        document.getElementById('scroll top').style.backgroundColor = 'transparent'
+        document.getElementById('scroll top').style.width = '0%'
+        document.getElementById('scroll top').style.height = '0%'
+        document.getElementById('scroll top link').style.Color = 'transparent'
     }
-    if (distance_top > 0.9* 1500){
-        document.getElementById('top scroll').style.visibility = 'visible'
-    }
-    else {
-        document.getElementById('top scroll').style.visibility = 'hidden'
-    }
-    });
+ });
 
 addEventListener('click', (evt) => {
     let El = evt.target
