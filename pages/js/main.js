@@ -37,6 +37,7 @@ addEventListener('DOMContentLoaded', (evt) => {
     menu_button = document.getElementById('menu_button')
     scroll_top_element =  document.getElementById('scroll top')
     scroll_top_link_element = document.getElementById('scroll top link')
+    window_div = document.getElementById('window div')
     resize()
 });
 
@@ -46,17 +47,17 @@ addEventListener('resize', (evt) => {
 
 function menu() {
     if (!menu_open) {
-        document.getElementById('menu').style.left = '0'
+        menu_element.style.left = '0'
         menu_open = true
     }
     else {
-        document.getElementById('menu').style.left = 'calc(-1*var(--menu_width))'
+        menu_element.style.left = 'calc(-1*var(--menu_width))'
         menu_open = false
     }
 }
 
 function resize() {
-    document.getElementById('window div').height = window.innerHeight
-    document.getElementById('window div').width = window.innerWidth
-    document.getElementById('title video').height = window.innerHeight
+    window_div.height = window.innerHeight
+    window_div.width = window.innerWidth
+    document.getElementById('title video').width = window.innerWidth
 }
