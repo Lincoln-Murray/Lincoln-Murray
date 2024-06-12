@@ -8,7 +8,7 @@ addEventListener('scroll', (evt) => {
     else {
         document.getElementById('header').style.backgroundColor = 'transparent'
     }
-    if (distance_top > 1400){
+    if (distance_top > 934){
         scroll_top_element.style.visibility = 'visible'
         scroll_top_element.style.backgroundColor = 'var(--highlight_color)'
         scroll_top_element.style.width = '10%'
@@ -20,7 +20,7 @@ addEventListener('scroll', (evt) => {
         scroll_top_element.style.backgroundColor = 'transparent'
         scroll_top_element.style.width = '0%'
         scroll_top_element.style.height = '0%'
-        scroll_top_link_element.style.Color = 'transparent'
+        scroll_top_link_element.style.Color = 'var(--highlight_color)'
     }
     });
 
@@ -58,6 +58,4 @@ function menu() {
 function resize() {
     document.getElementById('window div').height = window.innerHeight
     document.getElementById('window div').width = window.innerWidth
-    document.getElementById('title video').height = window.innerHeight
-    document.getElementById('main').height = 3*window.innerHeight
-}
+ 
