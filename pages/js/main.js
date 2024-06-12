@@ -59,5 +59,5 @@ function menu() {
 function resize() {
     window_div.height = window.innerHeight
     window_div.width = window.innerWidth
-    document.getElementById('title video').width = window.innerWidth
+    document.getElementById('title video').height = window.innerHeight
 }
