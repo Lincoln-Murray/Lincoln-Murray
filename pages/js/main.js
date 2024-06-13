@@ -13,6 +13,7 @@ addEventListener('scroll', (evt) => {
         scroll_top_element.style.backgroundColor = 'var(--highlight_color)'
         scroll_top_element.style.width = '10%'
         scroll_top_element.style.height = '5%'
+        scroll_top_element.style.minWidth = '150px'
         scroll_top_link_element.style.Color = 'var(--background_color)'
     }
     else {
@@ -20,6 +21,7 @@ addEventListener('scroll', (evt) => {
         scroll_top_element.style.backgroundColor = 'transparent'
         scroll_top_element.style.width = '0%'
         scroll_top_element.style.height = '0%'
+        scroll_top_element.style.minWidth = '0'
         scroll_top_link_element.style.Color = 'var(--highlight_color)'
     }
     });
@@ -60,4 +62,7 @@ function resize() {
     window_div.height = window.innerHeight
     window_div.width = window.innerWidth
     document.getElementById('title video').height = window.innerHeight
+    if (window.innerWidth <= 300) {
+        return
+    } 
 }
