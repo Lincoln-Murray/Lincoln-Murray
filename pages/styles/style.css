@@ -1,5 +1,5 @@
 :root{
-    --title_size: 2em;
+    --title_size: 4vh;
     --menu_width: 40%;
     --background_color: #171925;
     --primary_color: #0d1f35;
@@ -32,6 +32,7 @@
     margin: 0px;
     border: 0px;
     scroll-behavior: smooth;
+    word-break: normal;
 }
 
 html {
@@ -40,7 +41,7 @@ html {
 
 p {
     text-align: left;
-    font-size: calc(var(--title_size)/3);
+    font-size: calc(var(--title_size)/1.5);
     word-wrap: break-word;
 }
 
@@ -114,5 +115,5 @@ p {
 
 .footer_title {
     text-align: center;
-    font-size: calc(var(--title_size)/10);
+    font-size: calc(var(--title_size)/3);
 }
