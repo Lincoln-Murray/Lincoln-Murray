@@ -8,7 +8,7 @@ addEventListener('scroll', (evt) => {
     else {
         document.getElementById('header').style.backgroundColor = 'transparent'
     }
-    if (distance_top > 934){
+    if (distance_top > 2*934){
         scroll_top_element.style.visibility = 'visible'
         scroll_top_element.style.backgroundColor = 'var(--highlight_color)'
         scroll_top_element.style.width = '10%'
