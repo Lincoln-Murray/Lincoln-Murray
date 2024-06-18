@@ -29,7 +29,7 @@ addEventListener('scroll', (evt) => {
 addEventListener('click', (evt) => {
     let El = evt.target
     console.log(El)
-    if (El === menu_button || (El != menu_element && menu_open === true)) {
+    if (El === menu_button || ((El != menu_element || El in menu_element.children) && menu_open === true)) {
         menu()
     }
 });
