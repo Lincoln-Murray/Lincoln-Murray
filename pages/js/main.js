@@ -28,9 +28,6 @@ addEventListener('scroll', (evt) => {
 
 addEventListener('click', (evt) => {
     let El = evt.target
-    console.log(El)
-    console.log(String(El.id))
-    console.log(menu_element.children.namedItem(String(El.id)) != null)
     if (El === menu_button || (!(El != menu_element || menu_element.children.namedItem(String(El.id)) === null) && menu_open === true)) {
         menu()
     }
