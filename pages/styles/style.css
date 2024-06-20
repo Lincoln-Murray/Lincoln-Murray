@@ -65,6 +65,7 @@ p {
     left: calc(-1*var(--menu_width));
     transition: 0.9s left;
     -webkit-transition: 0.9s left;
+    overflow: hidden;
 }
 
 .infoimg {
