@@ -77,7 +77,7 @@ body {
     font-size: 18px;
     font-weight: 300;
     color: #212121;
-    perspective: 4px; /* The depth */
+    perspective: 4px;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -90,7 +90,7 @@ section{
 }
 
 .container {
-    margin: auto; /* To center the text horizontally */
+    margin: auto;
     padding: 4vw;
 }
 
