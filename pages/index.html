@@ -1,102 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="js/main.js"></script>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lincoln Murray</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
-
-    <header class="header" id="header">
-        <span id="menu_button" style="left: 4%; font-size: var(--title_size); color: var(--background_color); background-color: transparent;" class="centre" id="menu button">
-            ☰
-        </span>
-        <span class="centre", style="width: 60%; color: var(--background_color);">
-            Lincoln Murray
-        </span>
-    </header>
-
-    <body id="body">
-        <span id="menu" class="menu">
-            <input id="search" size="0" type="text" placeholder="Search..." style="font-size: var(--title_size); position: absolute; width: 100%;">
-        </span>
-        <span id="scroll top" class="centre" style="height: 5%; width: 0%; top: 80%; z-index: 2; background-color: transparent;  border-radius: 1em; position: fixed; visibility: hidden; transition: 0.4s all; overflow: hidden;">
-            <a id="scroll top link" class="centre" href="#title video" style="width: 100%; font-size: calc(var(--title_size)/2); color: var(--background_color); text-decoration: none; text-wrap: nowrap; transition: color 0.2s; :visited{ color: var(--background_color)}">Scroll to top</a>
-        </span>
-
-        <div id="window div", style="overflow: hidden; z-index: -10; position: sticky; left: 50%; text-align: center; height: 100%;">
-            <video id="title video" loop autoplay muted>
-                <source src="media/videos/Website.mp4" type="video/mp4">
-            </video>
-        </div>
-
-        <span class="centre" style="width: 62%; height: 90%; background-color: var(--secondary_color); top: 150%; left: 33.5%; z-index: -3; border-radius: 4vw 0 0 4vw;">
-            <div style="width: 85%; height: 90%; text-align: left; position: absolute; left: 10%; top: 5%;">
-                <h1><br>About me</h1>
-                <h3><br>I'm a year 12 computer science student with an interest in programming, I work on open source projects such as my python based minimalist 3D renderer.</h3>
-                <div style="text-align: right;">
+    <body>
+        <video class="hero_video" loop autoplay muted>
+            <source src="media/videos/hero.mp4" type="video/mp4">
+        </video>
+        <header>
+            <div>
+                <h1>Lincoln Murray</h1>
+                <h2>A recent high school graduate who programs in Python3, JavaScript, and GD Script.</h2>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                    <h3><br>About me</h3>
+                    <p>
+                        <br>I'm a recent high school graduate with a drive for programming and engineering. I strive to contribute to my GitHub at least once per day in order to keep my skills sharp and perpetually grow both my portfolio and knowledge, I do this by working on making high quality projects, usually with a constraint that makes it particularly challenging. If you're interested in checking these projects out I've outlined my favourites below.
+                        <br>
+                        <br>Other things I enjoy are playing games, with my favourites being Payday 2, Portal 2 and Super Smash Bros Ultimate; Making games, such as HitFire, A first person online multiplayer shooter a friend and I have been working on; and photography, especially of cars(Which can be found on my photography Instagram <a href="https://www.instagram.com/lm_photography_wa/">LM_Photography_WA</a>). Good luck finding what you're looking for and I hope you like my projects!
+                    </p>
+            </div>
+            <div class="container" style="overflow-x: scroll; white-space: nowrap; -webkit-overflow-scrolling: touch;">
+                <div style="display: inline-block;">
+                    <div style="white-space: wrap; max-width: 92vw;">
+                        <h3><br>3D Renderer</h1>
+                        <p>This Python3 based 3D renderer was initially my Y11 programming project, before I continued to work on it and made it object orientated. It is running completley vanilla, with no external libraries used. making it easy to run and work with</p>
+                    </div>
+                    <div style="text-align: right; max-width: 92vw;">
+                        <a href="https://lincoln-murray.github.io/focus_timer" >Timer Website<br></a>
+                        <a href="https://github.com/Lincoln-Murray/focus_timer" >Github Repository</a>
+                    </div>
                     <br>
-                    <a href="about.html" >About me<br></a>
-                    <a href="https://github.com/Lincoln-Murray" >Github Page</a>
+                    <img src="/media/images/shaded_utah_teapot.png" style="max-width: 92vw; width: 92vw; border-radius: 3vh;">
+                </div>
+                <div style="display: inline-block; width: 4vw;"></div>
+                <div style="display: inline-block;">
+                    <div style="white-space: wrap; max-width: 92vw;">
+                        <h3><br>Rock Scalers</h1>
+                        <p>Rock Scalers is a mock up online store i created for my final Y12 computer science assesment, it runs using a Python3 based Flask backend interfacing with and SQLite3 database, displaying using Html, CSS and javascript</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <a href="https://y12-computer-science-database-project.onrender.com/" >Store Page<br></a>
+                        <a href="https://github.com/Lincoln-Murray/Y12_Computer_Science_Database_Project" >Github Repository</a>
+                    </div>
+                    <br>
+                    <img src="/media/images/rock scalers.jpg" style="max-width: 92vw; width: 92vw; border-radius: 3vh;">
+                </div>
+                <div style="display: inline-block; width: 4vw;"></div>
+                <div style="display: inline-block;">
+                    <div style="white-space: wrap; max-width: 92vw;">
+                        <h3><br>Focus Timer</h1>
+                        <p>This project is a javascipt based web timer/ countdown to help you stay on track with tasks, it is fully open source and can be found with the link below. It is also hosted on my github.</p>
+                    </div>
+                    <div style="text-align: right; max-width: 92vw;">
+                        <a href="https://lincoln-murray.github.io/focus_timer" >Timer Website<br></a>
+                        <a href="https://github.com/Lincoln-Murray/focus_timer" >Github Repository</a>
+                    </div>
+                    <br>
+                    <img src="/media/images/focus timer.jpg" style="max-width: 92vw; width: 92vw; border-radius: 3vh;">
+                </div>
+                <div style="display: inline-block; width: 4vw;"></div>
+                <div style="display: inline-block;">
+                    <div style="white-space: wrap; max-width: 92vw;">
+                        <h3><br>Lincoln Murray</h1>
+                        <p>The very page you are viewing right now, made to be an overview of my favourite projects and what I do, helping share easier</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <a href="lincoln-murray.onrender.com/" >Home Page<br></a>
+                        <a href="https://github.com/Lincoln-Murray/Lincoln-Murray" >Github Repository</a>
+                    </div>
+                    <br>
+                    <img src="/media/images/lincoln murray.jpg" style="max-width: 92vw; width: 92vw; border-radius: 3vh;">
                 </div>
             </div>
-        </span>
-        <div class="infoimg" style="top: 150%; left: 81%; border-radius: 0 4vw 4vw 0;">
-            <img src="media/images/Code.jpg" alt="Python code">
-        </div>
+            
+        </section>
 
-        <span class="centre" style="width: 62%; height: 90%; background-color: var(--secondary_color); top: 250%; left: 66.5%; z-index: -3; border-radius: 0 4vw 4vw 0;">
-            <div style="width: 85%; height: 90%; text-align: right; position: absolute; left: 10%; top: 5%;">
-                <h1><br> Focus Timer</h1>
-                <h3><br>This project is a javascipt based web timer/ countdown to help you stay on track with tasks, it is fully open source and can be found with the link below. It is also hosted on my github.</h3>
-                <div style="text-align: left;">
-                    <br>
-                    <a href="https://lincoln-murray.github.io/focus_timer" >Timer website<br></a>
-                    <a href="https://github.com/Lincoln-Murray/focus_timer" >Github repository</a>
+
+        <div class="footer">
+            <span class="footer_centre", style="left: 17.5%;">
+                <div class="footer_content">
+                    <footer_title>About:</footer_title>
+                    <p><a href="https://lincoln-murray.onrender.com/">My website</a></p>
+                    <p><a href="https://github.com/Lincoln-Murray">Github</a></p>
+                    <p><a href="https://www.youtube.com/@LM_PHOTOGRAPHY_WA">YouTube</a></p>
+
                 </div>
-            </div>
-        </span>
-        <img src="media/images/focus timer.jpg" class="centre" style="width: 33%; height: 90%; top: 250%; left: 19%; z-index: 1; z-index: -2;; object-fit: fill; border-radius: 4vw 0 0 4vw;" alt="Focus Timer">
-
-        <span class="centre" style="width: 62%; height: 90%; background-color: var(--secondary_color); top: 350%; left: 33.5%; z-index: -3; border-radius: 4vw 0 0 4vw;">
-            <div style="width: 85%; height: 90%; text-align: left; position: absolute; left: 10%; top: 5%;">
-                <h1><br>Rock Scalers</h1>
-                <h3><br>Rock Scalers is a mock up online store i created for my final Y12 computer science assesment, it runs using a Python3 based Flask backend interfacing with and SQLite3 database, displaying using Html, CSS and javascript</h3>
-                <div style="text-align: right;">
-                    <br>
-                    <a href="https://y12-computer-science-database-project.onrender.com/" >Store Page<br></a>
-                    <a href="https://github.com/Lincoln-Murray/Y12_Computer_Science_Database_Project" >Github Page</a>
+            </span>
+    
+            <span class="footer_centre", style="left: 50%;">
+                <div class="footer_content">
+                    <footer_title>Contact:</footer_title>
+                    <p><a href="https://www.instagram.com/lm_photography_wa/">Photography Instagram</a></p>
+                    <p><a href="https://www.instagram.com/l_t_murray/">Personal Instagram</a></p>
                 </div>
-            </div>
-        </span>
-        <div class="infoimg" style="top: 350%; left: 81%; border-radius: 0 4vw 4vw 0;">
-            <img src="media/images/rock scalers.png" style="width: 100%;" alt="Mobile view of a online store for rock climbing">
+            </span>
+    
+            <span class="footer_centre", style="left: 82.5%;">
+                <div class="footer_content">
+                    <footer_title>Other:</footer_title>
+                    <p>Nothing available</p>
+                </div>
+            </span>
         </div>
-
     </body>
-
-    <footer class="footer">
-        <span class="footer_centre", style="left: 17.5%;">
-            <div class="footer_content">
-                <footer_title>About:</footer_title>
-                <p><a href="https://lincoln-murray.github.io/Lincoln-Murray/pages/">My website</a></p>
-                <p><a href="https://github.com/Lincoln-Murray">Github</a></p>
-            </div>
-        </span>
-
-        <span class="footer_centre", style="left: 50%;">
-            <div class="footer_content">
-                <footer_title>Contact:</footer_title>
-                <p>No current contact methods available</p>
-            </div>
-        </span>
-
-        <span class="footer_centre", style="left: 82.5%;">
-            <div class="footer_content">
-                <footer_title>Other:</footer_title>
-                <p>Nothing available</p>
-            </div>
-        </span>
-    </footer>
 </html>
