@@ -91,7 +91,6 @@ section{
 
 .container {
     margin: auto; /* To center the text horizontally */
-    max-width: 1000px; /* Limiting the width for extra large screens */
     padding: 4vw;
 }
 
